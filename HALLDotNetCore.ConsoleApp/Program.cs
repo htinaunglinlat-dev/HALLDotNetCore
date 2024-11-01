@@ -27,3 +27,16 @@ using HALLDotNetCore.ConsoleApp;
 //adoDotNetExample.Read();
 //adoDotNetExample.DeleteWithFlag();
 
+DapperExample dapperExample = new DapperExample();
+//dapperExample.Read();
+//dapperExample.Create("asd", "asd", "asd");
+//dapperExample.Read();
+//dapperExample.Update(100, "hello", "hello", "hello");
+//dapperExample.Read();
+//Console.WriteLine(".................");
+//dapperExample.Update(19, "hello world", "hello world", "hello world");
+//dapperExample.Read();
+//dapperExample.deleteById(5);
+//dapperExample.Read();
+
+
