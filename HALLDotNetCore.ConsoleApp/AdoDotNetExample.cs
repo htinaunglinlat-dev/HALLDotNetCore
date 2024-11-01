@@ -232,5 +232,36 @@ namespace HALLDotNetCore.ConsoleApp
             connection.Close();
             Console.WriteLine((result == 1) ? "Deleted Successfully" : "Deletion process Failed.");
         }
+        public void DeleteWithFlag()
+        {
+            SqlConnection connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            Console.Write("Enter the delete blog Id = ");
+            string id = Console.ReadLine();
+
+            string searchByIdQuery = @"SELECT [BlogId], [BlogTitle], [BlogAuthor], [BlogContent] FROM [tbl_blog] WHERE Blogid = @BlogId AND DeleteFlag = 0";
+            SqlCommand searchCmd = new SqlCommand(searchByIdQuery, connection);
+            searchCmd.Parameters.AddWithValue("@BlogId", id);
+            SqlDataAdapter adapter = new SqlDataAdapter(searchCmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            if(dt.Rows.Count == 0)
+            {
+                Console.WriteLine($"No data was found by provided id {id}.");
+                return; 
+            }
+
+            // Console.WriteLine($"{dt.Rows[0]["BlogId"]} {dt.Rows[0]["BlogTitle"]} {dt.Rows[0]["BlogAuthor"]} {dt.Rows[0]["BlogContent"]}");
+            string deleteQuery = @"UPDATE [dbo].[tbl_blog] SET [DeleteFlag] = 1 WHERE [BlogId] = @BlogId;";
+            SqlCommand deleteCmd = new SqlCommand(deleteQuery, connection);
+            deleteCmd.Parameters.AddWithValue("@BlogId", id);
+            int result = deleteCmd.ExecuteNonQuery();
+
+            connection.Close();
+
+            Console.WriteLine((result == 0) ? "Deleted by Flag Failed." : "Deleted by Flag Successfully.");
+        }
     }
 }

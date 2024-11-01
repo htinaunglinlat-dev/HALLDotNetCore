@@ -18,13 +18,12 @@ using HALLDotNetCore.ConsoleApp;
 
 // NuGet https://www.nuget.org/ (package for C#)
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 //adoDotNetExample.Read();
-adoDotNetExample.Create();
-//adoDotNetExample.Read();
+//adoDotNetExample.Create();
 //adoDotNetExample.Edit();
 //adoDotNetExample.Update();
-adoDotNetExample.Read();
-adoDotNetExample.Delete();
-adoDotNetExample.Read();
+//adoDotNetExample.Delete();
+//adoDotNetExample.Read();
+//adoDotNetExample.DeleteWithFlag();
 
