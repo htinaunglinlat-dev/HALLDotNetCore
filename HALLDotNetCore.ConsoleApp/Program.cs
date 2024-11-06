@@ -39,4 +39,15 @@ DapperExample dapperExample = new DapperExample();
 //dapperExample.deleteById(5);
 //dapperExample.Read();
 
+EFCoreExample efCoreExample = new EFCoreExample();
+efCoreExample.Read();
+//efCoreExample.Create("new one", "lama dev", "new one is the best");
+//efCoreExample.Edit(9);
+//efCoreExample.Edit(4);
+//efCoreExample.Edit(100);
+//efCoreExample.Update(17, "asd123!@#", null, "");
+//efCoreExample.DeleteByFlag(20);
+//efCoreExample.DeleteByFlag(6);
+//efCoreExample.Read();
+
 
