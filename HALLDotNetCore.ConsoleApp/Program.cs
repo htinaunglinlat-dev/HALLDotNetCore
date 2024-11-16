@@ -27,7 +27,7 @@ using HALLDotNetCore.ConsoleApp;
 //adoDotNetExample.Read();
 //adoDotNetExample.DeleteWithFlag();
 
-DapperExample dapperExample = new DapperExample();
+//DapperExample dapperExample = new DapperExample();
 //dapperExample.Read();
 //dapperExample.Create("asd", "asd", "asd");
 //dapperExample.Read();
@@ -39,8 +39,8 @@ DapperExample dapperExample = new DapperExample();
 //dapperExample.deleteById(5);
 //dapperExample.Read();
 
-EFCoreExample efCoreExample = new EFCoreExample();
-efCoreExample.Read();
+//EFCoreExample efCoreExample = new EFCoreExample();
+//efCoreExample.Read();
 //efCoreExample.Create("new one", "lama dev", "new one is the best");
 //efCoreExample.Edit(9);
 //efCoreExample.Edit(4);
@@ -51,3 +51,16 @@ efCoreExample.Read();
 //efCoreExample.Read();
 
 
+string _connectionString = "Data Source=DESKTOP-UST9CM1\\SQLEXPRESS;Initial Catalog=DotNetTrainingBatch5;User ID=sa;Password=sasa@123;";
+
+    Console.WriteLine("connection string = " + _connectionString);
+    SqlConnection connection = new SqlConnection(_connectionString);
+
+    Console.WriteLine("Connection is opening ....");
+    connection.Open();
+    Console.WriteLine("Connection is opened.");
+
+connection.Close();
+Console.WriteLine("Connection is closed");
+
+Console.ReadKey();
