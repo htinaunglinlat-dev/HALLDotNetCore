@@ -69,7 +69,9 @@ efcore
 efcore database first
 northwind database
 asp.net core web api (dot net 7)
-minimal api / ado.net / dapper => custom service
+minimal api / [ ado.net / dapper => custom service ]
 
 .net 7
 .net core 3.1
+
+---------------------------------
