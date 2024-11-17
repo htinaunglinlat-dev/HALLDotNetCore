@@ -75,3 +75,7 @@ minimal api / [ ado.net / dapper => custom service ]
 .net core 3.1
 
 ---------------------------------
+
+File.json
+
+Read => Convert Object [] => Json => Write
