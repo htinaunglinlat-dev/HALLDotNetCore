@@ -50,17 +50,13 @@ using HALLDotNetCore.ConsoleApp;
 //efCoreExample.DeleteByFlag(6);
 //efCoreExample.Read();
 
+//AdoDotNetExample2 adoDotNetEx2 = new AdoDotNetExample2();
+//adoDotNetEx2.Create();
+//adoDotNetEx2.Edit();
+//adoDotNetEx2.Read();
 
-string _connectionString = "Data Source=DESKTOP-UST9CM1\\SQLEXPRESS;Initial Catalog=DotNetTrainingBatch5;User ID=sa;Password=sasa@123;";
-
-    Console.WriteLine("connection string = " + _connectionString);
-    SqlConnection connection = new SqlConnection(_connectionString);
-
-    Console.WriteLine("Connection is opening ....");
-    connection.Open();
-    Console.WriteLine("Connection is opened.");
-
-connection.Close();
-Console.WriteLine("Connection is closed");
-
-Console.ReadKey();
+//DapperExample2 dappAdSerDaerEx2 = new DapperExample2();
+//dapperEx2.Read();
+//dapperEx2.Edit(1012);
+//dapperEx2.Create("123", "123", "123");
+//dapperEx2.Read();
