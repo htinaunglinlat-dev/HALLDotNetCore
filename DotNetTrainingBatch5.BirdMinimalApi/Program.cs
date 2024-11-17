@@ -56,7 +56,7 @@ app.MapGet("/birds/{id}", (int id) =>
 
     if(item is null) return Results.BadRequest("No data is founed.");
 
-    return Results.Ok(item)
+    return Results.Ok(item);
 }).WithName("GetBird").WithOpenApi();
 
 app.Run();
