@@ -73,8 +73,8 @@ app.Run();
 
 public class BlogDataModel
 {
-    public BlogHeader[] BlogHeader { get; set; }
-    public BlogDetail[] BlogDetail { get; set; }
+    public List<BlogHeader> BlogHeader { get; set; }
+    public List<BlogDetail> BlogDetail { get; set; }
 }
 
 public class BlogHeader
