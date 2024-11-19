@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DotNetTrainingBatch5.Domain.features.Blog
 {
+    // Business Logic + Data Access
     public class BlogService
     {
         private readonly AppDbContext _db = new AppDbContext();
