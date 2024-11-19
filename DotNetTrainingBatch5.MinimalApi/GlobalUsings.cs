@@ -2,3 +2,4 @@
 global using DotNetTrainingBatch5.MinimalApi.Endpoints.Blog;
 global using Microsoft.AspNetCore.Http.HttpResults;
 global using Microsoft.EntityFrameworkCore;
+global using DotNetTrainingBatch5.Domain.features.Blog;

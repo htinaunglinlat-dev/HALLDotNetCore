@@ -122,6 +122,7 @@ app.UseHttpsRedirection();
 //9.Test(); 
 
 app.UseBlogEndpoint();
+//app.UseBlogServiceEndpoint();
 
 app.Run();
 
