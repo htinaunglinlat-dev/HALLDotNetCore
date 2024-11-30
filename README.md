@@ -77,5 +77,54 @@ minimal api / [ ado.net / dapper => custom service ]
 ---------------------------------
 
 File.json
-
 Read => Convert Object [] => Json => Write
+
+--------------------------------
+
+Kpay 
+
+Mobile No
+Me - Another one
+
+
+Id
+Login full-name
+Mobile Number 
+Balance
+pin
+
+# API
+- Deposite (in) => + (mobile number, balance) => input (+)
+- Withdraw (out) => - (mobile number, balance) => input (+) (minimum amount at account = 10k)
+
+- Transfer API (requirement) => FromMobileNo ToMobileNo Amount Pin
+Notes
+FromMobileNo != ToMobileNo
+check FromMobileNo and ToMobileNo
+Pin check
+Balance
+Note
+FromBalance -
+ToBalance + 
+Message (Complete)
+Transition History
+Transition Receive and Send Message
+
+Balance 
+
+User Account Register
+Login
+Change Pin
+Phone Change
+Forget Password and Reset Password
+First Time Login Pin Set Up
+
+## Case
+- Validation error
+- Logic error
+- CRUD error
+- Success case
+
+{
+	"RespCode", "RespDesp", "RespType", "IsSuccess", "IsError"
+} // RespType<Success OR SystemError OR Warning OR ValidatoinError>
